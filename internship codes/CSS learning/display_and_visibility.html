@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display and Visibility</title>
+    <style>
+        .v1{
+            visibility: visible;
+        }
+        .v2{
+            visibility: hidden;
+            border: 2px solid red;
+        }
+        /* Tip: Hidden elements take up space on the page. Use  display property to theboth hide and remove an element from the document layout! */
+        .d1{
+            display: inline;
+            background-color: aquamarine;
+            padding: 10px;
+        }
+        
+        .d2{
+            display: block;
+            background-color: brown;
+            text-align: center;
+        }
+        /* display property to the both hide and remove an element from the document layout! */
+        .d3{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="v1">This is Visible</h1>
+    <br>
+    <h1 class="v2">
+        this is not Visible
+    </h1>
+    <section class="d1">
+        this section display as an inline element
+    </section>
+    <br>
+    <br>
+    <span class="d2">this span will render as block element</span>
+
+    <div class="d3">
+        this div will not be displayed.
+    </div>
+
+</body>
+</html>

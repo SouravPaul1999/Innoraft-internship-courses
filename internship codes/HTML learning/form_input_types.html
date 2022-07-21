@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form input types</title>
+</head>
+
+<body>
+    <form action="">
+        <label for="meeting-time">Choose a time for your appointment:</label>
+        <!--datetime-local create input controls that let the user easily enter both a date and a time, including the year, month, and day as well as the time in hours and minutes.
+-->
+
+        <input type="datetime-local" id="meeting-time" name="meeting-time" value="2022-06-12T19:30"
+            min="2022-06-01T00:00" max="2022-06-14T00:00">
+
+        <br>
+
+        <label for="start">Start date:</label>
+        <input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+
+        <br>
+
+        <!--elements of type email are used to let the user enter and edit an e-mail address, or, if the multiple attribute is specified, a list of e-mail addresses.
+        -->
+        <label for="email">Enter your globex.com email:
+
+
+            <input type="email" id="email" pattern=".+@globex\.com" size="30" required>
+        </label>
+
+        <br>
+        <br>
+
+        <!--elements with type="file" let the user choose one or more files from their device storage. Once chosen, the files can be uploaded to a server using form submission, or manipulated using JavaScript code and the File API.-->
+
+        <label for="avatar">Choose a profile picture:</label>
+
+        <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg">
+        <!--The "accept "attribute value is a string that defines the file types the file input should accept. This string is a comma-separated list of unique file type specifiers. Because a given file type may be identified in more than one manner, it's useful to provide a thorough set of type specifiers when you need files of a given format.-->
+
+        <br>
+
+        <label for="appt">Choose a time for your meeting:</label>
+        <!--elements of type "time" create input fields designed to let the user easily enter a time (hours and minutes, and optionally seconds).-->
+        <input type="time" id="appt" name="appt" min="09:00" max="18:00" required>
+
+        <small>Office hours are 9am to 6pm</small>
+
+        <br>
+
+        <label for="site-search">Search the site:</label>
+        <!--elements of type "search" are text fields designed for the user to enter search queries into. These are functionally identical to text inputs, but may be styled differently by the user agent.-->
+        <input type="search" id="site-search" name="q">
+
+        <button>Search</button>
+
+        <br>
+        <br>
+
+        <label for="url">Enter an https:// URL:</label>
+        <!--URL type used to recognize whether it is url or not-->
+        <input type="url" name="url" id="url" placeholder="https://example.com" pattern="https://.*" size="30" required>
+        <br>
+        <br>
+
+        <p>Audio settings:</p>
+
+        <div>
+            <input type="range" id="volume" name="volume" min="0" max="11">
+            <label for="volume">Volume</label>
+        </div>
+        <!--elements of type range let the user specify a numeric value which must be no less than a given value, and no more than another given value. The precise value, however, is not considered important. This is typically represented using a slider or dial control rather than a text entry box like the number input type.
+
+Because this kind of widget is imprecise, it should only be used if the control's exact value isn't important.-->
+        <div>
+            <input type="range" id="cowbell" name="cowbell" min="0" max="100" value="90" step="10">
+            <label for="cowbell">Cowbell</label>
+        </div>
+
+        <br>
+        <br>
+
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username">
+        </div>
+
+        <!--lements of type password provide a way for the user to securely enter a password.
+
+The element is presented as a one-line plain text editor control in which the text is obscured so that it cannot be read, usually by replacing each character with a symbol such as the asterisk ("*") or a dot ("•"). This character will vary depending on the user agent and operating system. -->
+        <div>
+            <label for="pass">Password (8 characters minimum):</label>
+            <input type="password" id="pass" name="password" minlength="8" required>
+        </div>
+
+        <input type="submit" value="Sign in">
+
+        <br>
+        <br>
+
+        <!--elements of type button are rendered as simple push buttons, which can be programmed to control custom functionality anywhere on a webpage as required when assigned an event handler function (typically for the click event).-->
+        <a href="index.html">
+
+            <input
+            type="button"
+            value="Go to index page">
+        </a>
+
+
+
+    </form>
+</body>
+
+</html>

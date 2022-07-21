@@ -1,0 +1,124 @@
+<html>
+
+<head>
+    <title>Text format colour style transform></title>
+    <style>
+        /* In its simplest use, you only specify the horizontal shadow (2px) and the vertical shadow (2px) nextt (px) will add a blur effect to the shadow 
+        
+        Text-shadow with red and blue neon glow*/
+
+        /* font styles are normal,italic, oblique */
+        h1{ font-style: italic;
+            font-weight: normal;
+            text-decoration: underline;
+            text-align: center;
+            text-decoration-color: aqua;
+            text-shadow: 2px 2px 2px orangered, 0 0 25px blue, 0 0 4px darkblue;
+            
+        }
+
+        /* To shorten the code, it is also possible to specify all the individual font properties in one property.
+
+        The font property is a shorthand property for:
+
+            font-style
+            font-variant
+            font-weight
+            font-size/line-height
+            font-family
+
+        Note: The font-size and font-family values are required. If one of the other values is missing, their default value are used. */
+
+        p.a {
+            font: italic small-caps bold 15px/20px serif;
+            text-align: right;
+            background-color: azure;
+            color: blueviolet;
+        }
+
+        p.b {
+            text-align-last: center;
+            text-transform: capitalize;
+        }
+
+        p.c {
+            text-align-last: justify;
+            text-transform: uppercase;
+        }
+
+        p.d {
+            background-color: yellow;
+            color: brown;
+            direction: rtl;
+            unicode-bidi: bidi-override;
+        }
+
+        h3.ol {
+            text-decoration: overline;
+        }
+
+        h3.lt {
+            text-decoration: line-through red dashed 2px;
+        }
+
+        h3.ul {
+            text-decoration: underline;
+        }
+
+        h3.olul {
+            text-decoration: overline underline;
+            text-decoration-color: red;
+            text-decoration-style: wavy;
+            text-decoration-thickness: 2px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>The text allign style decoration transform Property and font</h1>
+
+    <h2>text-align: right:</h2>
+    <p class="a">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at
+        pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.</p>
+
+    <h2>text-align-last: center:</h2>
+    <p class="b">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at
+        pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.</p>
+
+    <h2>text-align-last: justify:</h2>
+    <p class="c">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at
+        pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.</p>
+
+    <h2>The direction and unicode-bidi properties can be used to change the text direction of an element</h2>
+    <p class="d">
+        This is right-to-left text direction.
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima explicabo qui illum debitis, fugit, ducimus cum
+        quia amet, corporis quos atque quisquam facere tenetur odio.
+    </p>
+    <p class="e">
+    <h3 class="ol">Overline text decoration</h3>
+    <h3 class="lt">Line-through text decoration</h3>
+    <h3 class="ul">Underline text decoration</h3>
+    <h3 class="olul">Overline and underline text decoration.</h3>
+
+    </p>
+
+    <p>
+    <pre>
+        letter-spacing 	Specifies the space between characters in a text
+
+        line-height 	Specifies the line height
+
+        text-indent 	Specifies the indentation of the first line in a text-block
+
+        white-space 	Specifies how to handle white-space inside an element
+
+        word-spacing 	Specifies the space between words in a text
+    </pre>
+
+    </p>
+</body>
+
+</html>

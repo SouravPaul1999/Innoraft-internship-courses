@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From_exp</title>
+</head>
+
+<body>
+    <form action="">
+        Name
+        <input type="text" name="Fullname" placeholder="Enter your Full name">
+        <br>
+        <br>
+        contact No <input type="text" name="ph number" placeholder="Enter your phone number">
+        <br>
+        <p>
+            <b> <u><big>Prefered mode of transport</big></u>
+            </b>
+        </p>
+        <label for="v1">
+            <!--The <label> element also help users who have difficulty clicking on very small regions (such as radio buttons or checkboxes) - because when the user clicks the text within the <label> element, it toggles the radio button/checkbox.
+
+            The for attribute of the <label> tag should be equal to the id attribute of the <input> element to bind them together.
+            -->
+            <input type="radio" value="Two wheeler" name="Veichle" id="v1">
+            <!--The id attribute specifies a unique id for an HTML element. The value of the id attribute must be unique within the HTML document.
+
+The id attribute is used to point to a specific style declaration in a style sheet. It is also used by JavaScript to access and manipulate the element with the specific id.
+
+The syntax for id is: write a hash character (#), followed by an id name. Then, define the CSS properties within curly braces {}.
+
+-->
+            <b><u>Two wheeler</u></b>
+        </label>
+
+        <label for="v2">
+            <input type="radio" value="Four wheeler" name="Veichle" id="v2">
+            <!--By using radio type you can specify to choose only one option-->
+            <b><u>Four wheeler</u></b>
+        </label>
+        <br>
+        <hr>
+
+        <label for="mb1">
+            <input type="checkbox" name="Pulsar" id="mb1">
+            <!--By using checkbox we can choose multiple option-->
+            Pulsar
+        </label>
+        <label for="mb2">
+            <input type="checkbox" name="TVS" id="mb2">
+            TVS
+        </label>
+        <label for="mb3">
+            <input type="checkbox" id="mb3" name="HONDA">
+            HONDA
+        </label>
+        <label for="mb4">
+            <input type="checkbox" id="mb4" name="BMW">
+            BMW
+        </label>
+        <br>
+        <br>
+        <label for="Two wheeler">
+
+            <select name="veichle" id="Two Wheeler">
+                <option value="select your Two Wheeler">select your Two wheeler</option>
+                <option value="pulsar220" name="Pulsar220">Pulsar220</option>
+                <option value="TVS pep plus">TVS Pep plus</option>
+            </select>
+        </label>
+        &nbsp;&nbsp;
+        <label for="car">
+            <select name="four wheeler" id="car">
+                <option value="select your four wheeler"> Select your Four wheeler </option>
+                <option value="BMW S"> BMW S</option>
+                <option value="BMW X4">BMW X4</option>
+            </select>
+        </label>
+        <br>
+        <br>
+        <textarea name="explain" id="explain" cols="30" rows="10" placeholder="Why you prefer this Veichle?"></textarea>
+        <br>
+
+
+
+    </form>
+    <br>
+</body>
+
+</html>

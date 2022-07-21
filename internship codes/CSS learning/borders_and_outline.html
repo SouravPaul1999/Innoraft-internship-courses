@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        CSS borders
+    </title>
+    <style>
+        /* types of borders */
+        p.des {
+            border-style: inset;
+        }
+
+        p.dotted {
+            border-style: dotted;
+        }
+
+        p.dashed {
+            border-style: dashed;
+        }
+
+        p.solid {
+            border-style: solid;
+        }
+
+        p.double {
+            border-style: double;
+        }
+
+        p.groove {
+            border-style: groove;
+        }
+
+        p.ridge {
+            border-style: ridge;
+        }
+
+        p.inset {
+            border-style: inset;
+        }
+
+        p.outset {
+            border-style: outset;
+        }
+
+        p.none {
+            border-style: none;
+        }
+
+        p.hidden {
+            border-style: hidden;
+        }
+
+        p.mix {
+            border-style: dotted dashed solid double;
+        }
+
+        p.groove-red {
+            border: 3px groove greenyellow;
+        }
+
+        p.border-sides {
+            border-bottom: 5px dashed red;
+            border-left: 2px dotted gold;
+            border-top: 3px groove green;
+            border-right: 4px outset goldenrod;
+        }
+
+        p.rounded-border {
+            border: 4px solid salmon;
+            border-radius: 7px;
+        }
+
+        #mix-rounded-border {
+            border: 2px solid;
+            border-top-left-radius: 6px;
+            border-bottom-right-radius: 5px;
+        }
+
+        /* types of outlines */
+
+        /* Outline differs from borders! Unlike border, the outline is drawn outside the element's border, and may overlap other content. Also, the outline is NOT a part of the element's dimensions; the element's total width and height is not affected by the width of the outline. */
+
+        p.dotted {
+            outline-style: 2px dotted;
+        }
+
+        p.dashed {
+            outline-style: 3px dashed;
+        }
+
+        p.solid {
+            outline-style: 4px solid;
+        }
+
+        p.double {
+            outline-style: 5px double;
+        }
+
+        p.groove {
+            outline-style: 2px groove;
+        }
+
+        p.ridge {
+            outline-style: ridge;
+        }
+
+        p.inset {
+            outline-style: inset;
+        }
+
+        p.outset {
+            outline-style: outset;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>The border-style Property</h2>
+    <p class="des">This property specifies what kind of border to display:</p>
+
+    <p class="dotted">This is A dotted border.</p>
+    <p class="dashed">A dashed border.</p>
+    <p class="solid">A solid border.</p>
+    <p class="double">A double border.</p>
+    <p class="groove">A groove border.</p>
+    <p class="ridge">A ridge border.</p>
+    <p class="inset">An inset border.</p>
+    <p class="outset">An outset border.</p>
+    <p class="none">No border.</p>
+    <p class="hidden">A hidden border.</p>
+    <p class="mix">A mixed border.</p>
+    <p class="groove-red"> This is A groove-greenYellow border by using shorthand</p>
+
+    <p class="border-sides">From the examples on the previous pages, you have seen that it is possible to specify a
+        different border for each side.
+
+        In CSS, there are also properties for specifying each of the borders (top, right, bottom, and left)with
+        different types of colours and different size of width:</p>
+    <p class="rounded-border">This is a example of rounded-border </p>
+
+    <p id="mix-rounded-border">
+        This is a example of
+        mix-rounded-border
+    </p>
+
+    <div class="outline">
+        <h2>
+
+        </h2>
+        <p class="dotted">A dotted outline</p>
+        <p class="dashed">A dashed outline</p>
+        <p class="solid">A solid outline</p>
+        <p class="double">A double outline</p>
+        <p class="groove">A groove outline. The effect depends on the outline-color value.</p>
+        <p class="ridge">A ridge outline. The effect depends on the outline-color value.</p>
+        <p class="inset">An inset outline. The effect depends on the outline-color value.</p>
+        <p class="outset">An outset outline. The effect depends on the outline-color value.</p>
+
+    </div>
+
+</body>
+
+</html>

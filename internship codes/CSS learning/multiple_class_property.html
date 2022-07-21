@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>multiple class</title>
+  <style>
+    .wrapper{
+      margin: 0 auto;
+      padding: 50px;
+    }
+    .menu-box{
+      display: flex;
+      width: 500px;
+      margin: 0 auto;
+    }
+    .box{
+      height: 100px;
+      flex: 1;
+      border: 1px solid black;
+    }
+    .child{
+      height: 50px;
+      width: 50px;
+      margin: 0 auto;
+      /* margin: 25px 0px; */
+    }
+    .black{
+      background-color: black;
+    }
+    .red{
+      background-color: red;
+    }
+    .yellow{
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+  <section class="wrapper">
+    <div class="menu-box">
+      <div class="box red">
+        <div class="child yellow">
+
+        </div>
+      </div>
+      <div class="box">
+        <div class="child black">
+
+        </div>
+      </div>
+      <div class="box yellow">
+        <div class="child red">
+
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
